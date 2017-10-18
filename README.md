@@ -1,6 +1,6 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+This script output list of online friends in VK
 
 # How to Install
 
@@ -9,6 +9,18 @@ Python 3 should be already installed. Then use pip (or pip3 if there is a confli
 ```bash
 pip install -r requirements.txt # alternatively try pip3
 ```
+
+Then you can run it via console.
+
+```bash
+Friends Online:
+Дмитрий Парыгин
+Егор Большаков
+Яна Косматых
+Сашка Зайцева
+Александр Станкевич
+```
+You also can same run it on Windows
 
 Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
 
