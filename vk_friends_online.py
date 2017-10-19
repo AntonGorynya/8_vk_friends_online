@@ -17,7 +17,7 @@ def get_user_password():
 
 
 def get_online_friends(login, password):
-    WAIT_TIME = 1
+    wait_time = 1
     friends_online = []
     session = vk.AuthSession(
         app_id=APP_ID,
@@ -29,7 +29,7 @@ def get_online_friends(login, password):
     online_friends_id = api.friends.getOnline()
     for online_friend_id in online_friends_id:
         friends_online.append(api.users.get(user_id=online_friend_id))
-        time.sleep(WAIT_TIME)
+        time.sleep(wait_time)
     return friends_online
 
 
