@@ -1,6 +1,5 @@
 import vk
 import getpass
-import time
 
 
 APP_ID = '6225304'
@@ -26,7 +25,6 @@ def get_online_friends(login, password):
     api = vk.API(session)
     online_friends_id = api.friends.getOnline()
     friends_online = api.users.get(user_ids=online_friends_id)
-    print(friends_online)
     return friends_online
 
 
